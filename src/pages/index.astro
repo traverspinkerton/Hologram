@@ -1,0 +1,28 @@
+---
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://giumzdclcufdhctrcyon.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+let { data: feels, error } = await supabase
+  .from('feels')
+  .select('*')
+
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hologram</title>
+  </head>
+  <body>
+    <ul>
+      {feels.map(feel => <li>{feel.what}</li>)}
+    </ul>
+  </body>
+
+  <style></style>
+</html>

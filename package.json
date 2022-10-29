@@ -1,0 +1,23 @@
+{
+  "name": "hologram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/netlify": "^1.2.0",
+    "@supabase/supabase-js": "^2.0.4",
+    "astro": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7"
+  }
+}
