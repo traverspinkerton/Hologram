@@ -21,6 +21,6 @@
   ## more info on configuring this file: https://docs.netlify.com/configure-builds/file-based-configuration/
 
 
-[[edge_functions]]
-function = "feels"
-path = "/feels"
+#[[edge_functions]]
+# function = "feels"
+# path = "/feels"
